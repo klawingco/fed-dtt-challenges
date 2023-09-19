@@ -20,11 +20,12 @@ $full_circle_radius: $medium_border_radius * 2;
 
 .cardRating {
     background-image: linear-gradient(hsl(215, 22%, 15%), hsl(215, 27%, 12%));
-    padding: $subtle_border_radius;
-    width: 25%;
-    border-radius: 1em;
+    padding: 2em;
+    width: 22%;
+    border-radius: $subtle_border_radius;
     @media (max-width: 700px) {
-        width: 88%;
+        width: 82%;
+        padding: 1em;
     }
     @media (min-width: 701px) and (max-width: 1120px) {
         width: 30%;
@@ -48,13 +49,9 @@ $full_circle_radius: $medium_border_radius * 2;
     border-radius: $full_circle_radius;
     color: $orange;
     @media (max-width: 700px) {
-        width: 30px;
-        height: 30px;
+        width: 48px;
+        height: 48px;
     }
-    @media (min-width: 701px) and (max-width: 1120px) {
-        width: 35px;
-        height: 35px;
-    }    
 }
 
 .ratingBtnSet {

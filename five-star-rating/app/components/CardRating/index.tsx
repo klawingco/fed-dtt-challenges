@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Image from 'next/image'
-
+import StarIcon from '../../../public/icon-star.svg'
 import ThankYouIllustration from '../../../public/illustration-thank-you.svg'
 import styles from './index.module.scss'
 import RatingButtonSet from './RatingButtonSet'
@@ -18,7 +18,9 @@ const CardRating = () => {
     >
       {!submitted ? (
         <>
-          <div className={styles.starLogo}>★</div>
+          <div className={styles.starLogo}>
+            <Image src={StarIcon} alt={'Star Icon'} priority />
+          </div>
           <h1>How did we do?</h1>
           <p>
             Please let us know how we did with your support request. All
