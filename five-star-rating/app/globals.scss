@@ -1,0 +1,21 @@
+$primary-color: hsl(0, 0%, 100%);
+$secondary-color: hsl(217, 12%, 63%);
+
+body {
+  color: $primary-color;
+  background-color: hsl(216, 12%, 8%);
+}
+
+h1{
+  font-weight: 700;
+}
+p, span {
+  font-weight: 400;
+  color: $secondary-color;
+  font-size: 15px;
+}
+
+button{
+  border: none;
+  font-weight: 700;
+}

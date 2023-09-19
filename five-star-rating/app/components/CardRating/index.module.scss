@@ -1,0 +1,113 @@
+// in real world this should be on a different file i.e vars.scss or add it to nextjs scss vars plugin
+$mobile_max: "700px";
+$light_grey: hsl(217, 12%, 63%);
+$orange: hsl(25, 97%, 53%);
+$dark_blue: hsl(213, 19%, 18%);
+$subtle_border_radius: 1em;
+$medium_border_radius: 3em;
+$full_circle_radius: $medium_border_radius * 2;
+
+.fullCenter{
+    display: block;
+    text-align: center;
+}
+.flexCenter{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.cardRating {
+    background-image: linear-gradient(hsl(215, 22%, 15%), hsl(215, 27%, 12%));
+    padding: $subtle_border_radius;
+    width: 35%;
+    border-radius: 1em;
+    @media (max-width: 700px) {
+        width: 88%;
+    }
+    @media (min-width: 701px) and (max-width: 1120px) {
+        width: 42%;
+    }
+}
+.cardRatingSubmitted{
+    @extend .fullCenter;
+    @extend .flexCenter;
+    flex-direction: column;
+    h1{
+        margin-top: 1.5em;
+        margin-bottom: 0;
+    }
+}
+
+.starLogo{
+    @extend .flexCenter;
+    width: 50px;
+    height: 50px;
+    background-color: $dark_blue;
+    border-radius: $full_circle_radius;
+    color: $orange;
+    @media (max-width: 700px) {
+        width: 30px;
+        height: 30px;
+    }
+    @media (min-width: 701px) and (max-width: 1120px) {
+        width: 35px;
+        height: 35px;
+    }    
+}
+
+.ratingBtnSet {
+    @extend .flexCenter;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+.ratingBtn{
+    background-color: $dark_blue;
+    color: $light_grey;
+    width: 50px;
+    height: 50px;
+    border-radius:  $full_circle_radius;
+    &:hover{
+     cursor: pointer;   
+     background-color: $orange;
+    }
+    &:active{
+        background-color: $light_grey;
+    }
+    @media (max-width: 700px) {
+        width: 48px;
+        height: 48px;
+    }
+}
+.ratingBtnSelected{
+    background-color: $light_grey;
+    color: white;
+}
+
+.submitBtn{
+    text-transform: uppercase;
+    background-color: $orange;
+    font-weight: 700;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: $medium_border_radius;
+    letter-spacing: 4px;
+}
+.thankYouIllus{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 1.5em 0;
+}
+.selectedMsg{
+    color: $orange;
+    border-radius: $medium_border_radius;
+    background-color: $dark_blue;
+    padding: 0.5em 1em;
+}
+
