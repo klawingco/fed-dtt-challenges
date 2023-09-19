@@ -28,7 +28,11 @@ const CardRating = () => {
       ) : (
         <>
           <div className={styles.thankYouIllus}>
-            <Image src={ThankYouIllustration} alt={'Thank you Illustration'} />
+            <Image
+              src={ThankYouIllustration}
+              alt={'Thank you Illustration'}
+              priority
+            />
           </div>
           <span className={styles.selectedMsg}>
             You selected {rating} out of 5
