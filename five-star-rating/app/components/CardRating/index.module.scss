@@ -21,13 +21,13 @@ $full_circle_radius: $medium_border_radius * 2;
 .cardRating {
     background-image: linear-gradient(hsl(215, 22%, 15%), hsl(215, 27%, 12%));
     padding: $subtle_border_radius;
-    width: 35%;
+    width: 25%;
     border-radius: 1em;
     @media (max-width: 700px) {
         width: 88%;
     }
     @media (min-width: 701px) and (max-width: 1120px) {
-        width: 42%;
+        width: 30%;
     }
 }
 .cardRatingSubmitted{
