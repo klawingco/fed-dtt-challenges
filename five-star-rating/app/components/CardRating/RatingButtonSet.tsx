@@ -21,18 +21,22 @@ const RatingButtonSet = (props: {
   </div>
 )
 
-const RatingButton = (props: {
+const RatingButton = ({
+  isSelected,
+  value,
+  ...props
+}: {
   isSelected: boolean
   value: string | number
   onClick: () => void
 }) => (
   <button
     className={`${styles.ratingBtn} ${
-      props.isSelected ? styles.ratingBtnSelected : ''
+      isSelected ? styles.ratingBtnSelected : ''
     }`}
     {...props}
   >
-    {props.value}
+    {value}
   </button>
 )
 

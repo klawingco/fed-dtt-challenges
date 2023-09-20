@@ -4,6 +4,10 @@ $secondary-color: hsl(217, 12%, 63%);
 body {
   color: $primary-color;
   background-color: hsl(216, 12%, 8%);
+  
+}
+body * {
+  transition: all .22s ease-in-out;
 }
 
 h1{
