@@ -1,0 +1,34 @@
+@import "../../vars.scss";
+
+.container{
+    width: 40%;
+    border-radius: $subtle_border_radius;
+    background-color:  hsl(0, 0%, 100%);
+    -webkit-box-shadow: 22px 16px 38px -17px rgba(150,145,150,1);
+    -moz-box-shadow: 22px 16px 38px -17px rgba(150,145,150,1);
+    box-shadow: 22px 16px 38px -17px rgba(150,145,150,1);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @media (max-width: 700px) {
+        width: 100%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+    }
+    @media (min-width: 701px) and (max-width: 1120px) {
+        width: 36%;
+    }
+}
+.container > div {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    @media only screen and (max-width: 600px){
+        flex-basis: unset;
+        flex: unset;
+    }    
+}
