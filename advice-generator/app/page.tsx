@@ -8,7 +8,12 @@ export default function Home() {
   // This should be on .env or secret but for sake of demo will be hardcoded here.
   const { data, isLoading, isValidating, mutate } = useSWR<AdviceData>(
     '/advice',
-    adviceFetcher
+    adviceFetcher,
+    {
+      revalidateIfStale: false,
+      revalidateOnFocus: false,
+      revalidateOnReconnect: false
+    }
   )
   return (
     <main className={styles.main}>

@@ -13,18 +13,10 @@ const AdviceGenerator = ({
     <div className={styles.adviceWrap}>
       {isLoading ? (
         <>
-          <div className={styles.shimmerBG} role="alert" aria-busy="true">
-            Loader
-          </div>
-          <div className={styles.shimmerBG} role="alert" aria-busy="true">
-            Loader
-          </div>
-          <div className={styles.shimmerBG} role="alert" aria-busy="true">
-            Loader
-          </div>
-          <div className={styles.shimmerBG} role="alert" aria-busy="true">
-            Loader
-          </div>
+          <div className={styles.shimmerBG} role="alert" aria-busy="true"></div>
+          <div className={styles.shimmerBG} role="alert" aria-busy="true"></div>
+          <div className={styles.shimmerBG} role="alert" aria-busy="true"></div>
+          <div className={styles.shimmerBG} role="alert" aria-busy="true"></div>
         </>
       ) : (
         <>
