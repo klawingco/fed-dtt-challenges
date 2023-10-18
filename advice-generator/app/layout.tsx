@@ -6,8 +6,8 @@ import { Manrope } from 'next/font/google'
 const manrope = Manrope({ subsets: [] })
 
 export const metadata: Metadata = {
-  title: 'Results Summary',
-  description: 'Challenge 02',
+  title: 'Advice Generator',
+  description: 'Challenge 03',
 }
 
 export default function RootLayout({
