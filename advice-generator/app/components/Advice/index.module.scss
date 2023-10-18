@@ -1,0 +1,82 @@
+@import "../../vars.scss";
+.adviceWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 2rem;
+}
+
+.adviceHeader{
+    color: $heading_color;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+.adviceBody{
+    color: hsl(193, 38%, 86%);
+    font-weight: 800;
+    text-align: center;
+}
+.divider{
+    background-image: url('../../../public/pattern-divider-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 16px;
+    @media (max-width: 700px) {
+        background-image: url('../../../public/pattern-divider-mobile.svg');
+    }    
+    margin-bottom: 1.5em;
+}
+.generateAdvice{
+    height: 60px;
+    width: 60px;
+    border:0;
+    background-color: $heading_color;
+    border-radius: 100px;
+    position: absolute;
+    bottom: -30px;
+    &:hover{
+        -webkit-box-shadow: 1px -1px 36px 0px $heading_color;
+        -moz-box-shadow: 1px -1px 36px 0px $heading_color;
+        box-shadow: 1px -1px 36px 0px  $heading_color;
+    }
+    cursor: pointer;
+}
+
+.shimmerBG {
+    animation-duration: 2.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: shimmer;
+    animation-timing-function: linear;
+    background: $bg_color;
+    background: linear-gradient(to right, $bg_color 8%, $bg_color_container 18%, $bg_color 33%);
+    background-size: 1200px 100%;
+    color: transparent;
+    margin-bottom: 0.5em;
+    width: 100%;
+    border-radius: $subtle_border_radius;
+}
+
+@-webkit-keyframes shimmer {
+    0% {
+        background-position: -100% 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1200px 0;
+    }
+    100% {
+        background-position: 1200px 0;
+    }
+}
+

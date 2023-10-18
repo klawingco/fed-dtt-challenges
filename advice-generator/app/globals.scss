@@ -1,0 +1,12 @@
+@import "./vars.scss";
+
+
+body {
+  background-color:$bg_color;
+  font-size: 28px;
+  margin:0;
+}
+body * {
+  transition: all .18s ease-in-out;
+}
+
