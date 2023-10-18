@@ -12,7 +12,7 @@ export default function Home() {
     {
       revalidateIfStale: false,
       revalidateOnFocus: false,
-      revalidateOnReconnect: false
+      revalidateOnReconnect: false,
     }
   )
   return (
